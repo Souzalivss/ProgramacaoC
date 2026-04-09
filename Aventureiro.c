@@ -93,7 +93,15 @@ int main()  {
     printf("A densidade populacional é %.2f \n", densidade2);
     printf("O super poder é %.2f \n", superpoder2);
 
-    
+    //comparações:
+    printf("\n--- Comparações das cartas --- \n");
+    printf("População: %d\n", populacao1 > populacao2 ? 1 : 0);
+    printf("Pontos turísticos: %d\n", pturistico1 > pturistico2 ? 1 : 0);
+    printf("Área: %d\n", area1 > area2 ? 1 : 0);
+    printf("Pib: %d\n", pib1 > pib2 ? 1 : 0);
+    printf("Densidade populacional: %d\n", densidade1 < densidade2 ? 1 : 0);
+    printf("O super poder: %d", superpoder1 > superpoder2 ? 1 : 0);
+
     return 0;
 
    }
