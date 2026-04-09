@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main()  {
     // Carta 1
     char cidade1[50];
@@ -62,9 +63,10 @@ int main()  {
     float percapta1 = pib1 / populacao1;
     float percapta2 = pib2 / populacao2;
     float densidade1 = populacao1 / area1;
+    float densidade2 = populacao2 / area2;
 
-    float superpoder1 = populacao1 + pturistico1 + area1 + pib1 + percapta1; 
-
+    float superpoder1 = (float)populacao1 + (float)pturistico1 + area1 + pib1 + percapta1; 
+    float superpoder2 = (float)populacao2 + (float)pturistico2 + area2 + pib2 + percapta2;
 
     printf("\n--- Dados da Cidade 1 ---\n");
     printf("Cidade: %s\n", cidade1);
@@ -72,9 +74,11 @@ int main()  {
     printf("Estado: %s\n", estado1);
     printf("População: %d\n", populacao1);
     printf("Pontos turísticos: %d\n", pturistico1);
-    printf("Área: %f km²\n", area1);
-    printf("PIB: %f bilhões\n", pib1);
-    printf("o pib percapta da primeira cidade é: %f", percapta1);
+    printf("Área: %.2f km²\n", area1);
+    printf("PIB: %.2f bilhões\n", pib1);
+    printf("o pib percapta da primeira cidade é: %.2f \n", percapta1);
+    printf("A densidade populacional é %.2f \n", densidade1);
+    printf("O super poder é %.2f \n", superpoder1);
 
 
     printf("\n--- Dados da Cidade 2 ---\n");
@@ -85,10 +89,12 @@ int main()  {
     printf("Pontos turísticos: %d\n", pturistico2);
     printf("Área: %f km²\n", area2);
     printf("PIB: %f bilhões\n", pib2);
-    printf("O pib percapta da segunda cidade é: %f", percapta2);
+    printf("O pib percapta da segunda cidade é: %f \n", percapta2);
+    printf("A densidade populacional é %.2f \n", densidade2);
+    printf("O super poder é %.2f \n", superpoder2);
 
+    
     return 0;
-    //testes para o github
 
    }
    
