@@ -13,7 +13,7 @@ int main()  {
     char estado2[50]; 
     char codigo2[4];
     unsigned int populacao2;
-    int pturistico2;
+    int pturistico2; 
     float area2, pib2;
 
     printf("Digite o nome da PRIMEIRA cidade: \n");
@@ -88,6 +88,8 @@ int main()  {
     printf("O pib percapta da segunda cidade é: %f", percapta2);
 
     return 0;
+    //testes para o github
 
    }
+   
    
